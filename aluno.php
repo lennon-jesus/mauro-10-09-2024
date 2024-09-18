@@ -14,9 +14,9 @@ class Aluno
     }
     public function idade()
     {
-        "$ano/$mes/$dia" = $nascimento;
-        $idade = date("Y/m/d");
-        return(true);
+        $ano = substr($this->nascimento, 0, 4);
+        $atual = date("Y");
+        return $atual - $ano;
     }
 }
 

@@ -7,6 +7,8 @@ $alunoDiferente = serialize($aluno);
 
 session_start();
 
+echo "Dados recebidos!";
+
 $_SESSION['aluno'] = $alunoDiferente;
 
 ?>

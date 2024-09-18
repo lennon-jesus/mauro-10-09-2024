@@ -3,7 +3,10 @@ include "aluno.php";
 
 session_start();
 
-$aluno = unserialize($_SESSION['aluno']);
+$retornado = unserialize($_SESSION['aluno']);
 
-var_dump($aluno);
+echo "Nome: ".$retornado->nome;
+echo "Nascimento: ".$retornado->nascimento;
+echo "Matrícula: ".$retornado->matricula;
+echo "CPF: ".$retornado->cpf;
 ?>
